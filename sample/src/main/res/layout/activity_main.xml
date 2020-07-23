@@ -74,6 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Basic"
+                    android:visibility="gone"
                     android:textColor="@color/text_color" />
 
                 <Button
@@ -100,11 +101,29 @@
                 android:textColor="#888888"
                 android:textSize="14sp" />
 
-            <com.rengwuxian.materialedittext.MaterialEditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Floating Label"
-                app:met_floatingLabel="normal" />
+                android:background="#000"
+                android:padding="16dp">
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Floating Label"
+                    app:met_floatingLabel="normal"
+                    app:met_textColor="#fff"
+                    app:met_underlineColor="#fff"
+                    app:met_baseColor="#fff"
+                    app:met_floatingLabelTextColor="#fff"/>
+
+
+
+            </LinearLayout>
+
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -125,6 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Highlight Floating Label"
+                android:visibility="gone"
                 app:met_floatingLabel="highlight" />
 
             <TextView
@@ -147,6 +167,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Custom Floating Label Text"
                 app:met_floatingLabel="normal"
+                android:visibility="gone"
                 app:met_floatingLabelText="Label" />
 
             <TextView
@@ -169,6 +190,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Single Line Ellipsis"
+                android:visibility="gone"
                 android:text="Touch The Ellipsis And See What Happens. Touch The Ellipsis And See What Happens."
                 app:met_singleLineEllipsis="true" />
 
@@ -190,6 +212,7 @@
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:hint="Max Characters"
                 app:met_maxCharacters="5" />
 
@@ -204,6 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Min Characters"
+                android:visibility="gone"
                 app:met_minCharacters="3" />
 
             <TextView
@@ -217,6 +241,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Min and Max"
+                android:visibility="gone"
                 app:met_maxCharacters="5"
                 app:met_minCharacters="3" />
 
@@ -245,6 +270,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:visibility="gone"
                     android:hint="Helper/Error Text"
                     app:met_helperText="helper is here" />
 
@@ -296,6 +322,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:visibility="gone"
                     android:hint="Validation"
                     app:met_helperText="Integer" />
 
@@ -335,6 +362,7 @@
                 app:met_helperTextColor="#795548"
                 app:met_maxCharacters="5"
                 app:met_primaryColor="#2196F3"
+                android:visibility="gone"
                 app:met_textColor="@color/text_color"
                 app:met_textColorHint="#33ff0000"
                 app:met_underlineColor="#003587" />
@@ -362,6 +390,7 @@
                 app:met_floatingLabel="normal"
                 app:met_helperText="Helper Text"
                 app:met_maxCharacters="5"
+                android:visibility="gone"
                 app:met_typeface="fonts/Roboto-LightItalic.ttf" />
 
             <TextView
@@ -383,6 +412,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Hidden underline"
+                android:visibility="gone"
                 app:met_hideUnderline="true" />
 
             <TextView
@@ -404,6 +434,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Clear Button"
+                android:visibility="gone"
                 app:met_clearButton="true" />
 
             <TextView
@@ -427,6 +458,7 @@
                 android:hint="Material Design Icon"
                 app:met_iconLeft="@drawable/ic_phone"
                 app:met_iconPadding="0dp"
+                android:visibility="gone"
                 app:met_maxCharacters="5" />
 
         </LinearLayout>
